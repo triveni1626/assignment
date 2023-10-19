@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title> Survey Form </title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+#main {
+  background-color:mediumseagreen;
+  font-family: Raleway, monospace;
+  padding-bottom:50px;
+}
+
+.left-tab {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.right-tab {
+  margin-left: 50%;
+  text-align: left;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-size: 20px;
+}
+
+#main-div {
+  background-color:white;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#survey-form {
+  font-size: 20px;
+}
+
+#drop-down {
+  font-size: 20px;
+}
+
+#down-options {
+  font-size: 22px;
+}
+
+#name-label {
+  font-size: 22px;
+}
+
+#email-label {
+  font-size: 22px;
+}
+
+#number-label {
+  font-size: 22px;
+}
+
+#name {
+  font-size: 17px;
+  width: 200px;
+}
+
+#email {
+  font-size: 17px;
+  width: 280px;
+}
+
+#number {
+  font-size: 17px;
+  width: 280px;
+}
+body
+{
+background-color:grey;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+  
+
+
+</head>
+
+<body translate="no" >
+  <div id="main">
+ 
+<br>
+ <center> <h1> SURVEY FORM </h1></center>
+  <div id="main-div"><br>
+    
+   <form action="/action_page.php" method="get">   
+<label id="name-label" class="left-tab"> First Name:</label>
+      <input autofocus id="name" type="text" placeholder="Enter your Firstname" required><br><br>
+     
+<label id="name-label" class="left-tab"> Last Name:</label>
+      <input autofocus id="name" type="text" placeholder="Enter your Lastname" required><br><br>
+
+<label id="email-label" class="left-tab">Mobile Number:</label>
+      <input id="number" required type="number" placeholder="Enter your Number"><br><br>
+  
+
+
+<label id="email-label" class="left-tab">Email:</label>
+ <input id="email" required type="email" placeholder="Enter your Email"><br><br>
+
+<label id="profession-label" class="left-tab">profession:</label>
+ <input id="profession" required type="profession" placeholder="Enter your profession"><br><br>
+
+
+<label id="DOB-label" class="left-tab">DOB:</label>
+ <input id="DOB" required type="date" <br><br><br>
+
+<label class="left-tab">Country:</label>
+      <select id="down-options">
+        <option>India</option>
+        <option>canada</option>
+        <option>Australia</option>
+        <option>Brazil</option>
+      </select><br><br>
+      <label class="left-tab">Gender: <br></label>
+      <input class="right-tab" type="checkbox" value="1"><label>Female</label><br>
+      <input class="right-tab" type="checkbox" value="2"><label>Male</label><br>
+      <input type="checkbox" class="right-tab" value="3"><label>other</label><br>
+      <input class="right-tab" type="checkbox" value="4"><label>prefer not to answer</label><br>
+  <br><br><br>
+
+<center><input type="submit" value="Submit">&nbsp &nbsp &nbsp
+<input type="reset" value="Reset"></center>
+  
+</div>
+</div>
+</form>
+</body>
+
+</html>
+ 
